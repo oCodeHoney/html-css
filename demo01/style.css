@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom right, #82ccdd, #0a3d62);
+}
+
+input::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #95a5a6;
+}
+
+input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #95a5a6;
+}
+
+input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #95a5a6;
+}
+
+input:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #95a5a6;
+}
+
+textarea::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #95a5a6;
+}
+
+textarea:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #95a5a6;
+}
+
+textarea::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #95a5a6;
+}
+
+textarea:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #95a5a6;
+}
+
+.main {
+  position: relative;
+  background: #3c6382;
+  box-shadow: 0 0 10px #00000070;
+  width: 500px;
+}
+
+h2 {
+  color: #fff;
+  text-align: center;
+  margin: 20px 40px;
+  font-weight: 400;
+  letter-spacing: 0.4em;
+}
+
+.first-in {
+  margin-top: 50px;
+}
+
+.first,
+.second,
+.third {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 10px;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  background: none;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  transition: 0.25s;
+}
+
+.first:focus,
+.second:focus,
+.third:focus {
+  width: 280px;
+  outline: none;
+  border: 1px solid #4cd137;
+}
+
+.btn {
+  text-align: center;
+}
+
+button {
+  display: inline-block;
+  text-align: center;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  width: 100px;
+  height: 30px;
+  border-radius: 15px;
+  outline: none;
+}
+
+button:hover {
+  background: #487eb0;
+}
+
+button:active {
+  border: 1px solid #192a56;
+  background: none;
+}
+
+.textout {
+  margin: 20px 20px;
+  background: none;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: left;
+  padding: 50px 10px;
+  color: #fff;
+  font-size: 12px;
+}

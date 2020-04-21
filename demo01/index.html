@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>营销号段子生成器</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="main">
+    <h2>营销号段子生成器</h2>
+    <div class="first-in">
+      <input type="text" placeholder="请输入对象" class="first">
+    </div>
+    <div class="second-in">
+      <input type="text" placeholder="请输入事件" class="second">
+    </div>
+    <div class="third-in">
+      <input type="text" placeholder="请输入事件的另一种说法" class="third">
+
+    </div>
+    <div class="btn">
+      <button class="submit">点击生成</button>
+      <button class="clear">清除所有</button>
+    </div>
+    <div class="textout">段子在此输出</div>
+  </div>
+
+  <script>
+    var btn = document.querySelector('.submit');
+    var obj = document.querySelector('.first');
+    var eve = document.querySelector('.second');
+    var otheve = document.querySelector('.third');
+    var text = document.querySelector('.textout');
+    var clear = document.querySelector('.clear');
+
+    btn.onclick = function() {
+      if (obj.value && eve.value && otheve.value) {
+        text.innerHTML = "<p>" + obj.value + eve.value + "是怎么回事呢？" + obj.value + "相信大家都很熟悉，但是" + obj.value + eve.value + "是怎么回事呢，下面就让小编带大家一起了解一下吧。<br> " + obj.value + eve.value + "，其实就是" + otheve.value + "，大家可能会很惊讶" + obj.value + "怎么会" + eve.value + "呢？但事实就是这样，小编也感到非常惊讶。<br> 这就是关于" + obj.value + eve.value + "的事情了，大家有什么想法呢，欢迎在评论区告诉小编一起讨论哦!</p>"
+      } else {
+        text.innerHTML = '输入内容不能为空！'
+      }
+    }
+
+    clear.onclick = function() {
+      obj.value = '';
+      eve.value = '';
+      otheve.value = '';
+      text.innerHTML = '段子在此输出';
+    }
+  </script>
+</body>
+
+</html>
